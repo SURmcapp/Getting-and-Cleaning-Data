@@ -6,3 +6,8 @@ dat <- readxl::read_xlsx('~/GitHub/Getting-and-Cleaning-Data/getdata_data_DATA.g
 
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml" 
 
+url2 <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
+
+DT <- read.csv(file = 'getdata_data_ss06pid.csv')
+
+y <- DT[,mean(pwgtp15),by=SEX]
